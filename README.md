@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-WIP
+- [Vercel Deployment](https://product-preview-card-component-tyran0.vercel.app/)
 
 ## My process
 
@@ -44,7 +44,7 @@ WIP
 
 ### What I learned
 
-- URL: [Vercel](https://product-preview-card-component-tyran0.vercel.app/)
+WIP
 
 ``` json
   "scripts": {
