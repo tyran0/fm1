@@ -1,0 +1,6 @@
+safe: true
+source: ./dist
+sass:
+  sass_dir: ./sass
+gist:
+  noscript: false
