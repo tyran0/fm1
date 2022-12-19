@@ -44,7 +44,7 @@ WIP
 
 ### What I learned
 
-WIP
+- URL: [Vercel](https://product-preview-card-component-tyran0.vercel.app/)
 
 ``` json
   "scripts": {
