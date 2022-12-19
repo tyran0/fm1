@@ -1,0 +1,10 @@
+{
+  "name": "product-preview-card-component",
+  "version": "1.0.0",
+  "description": "Frontend Mentor product card component coding challenge",
+  "scripts": {
+    "build": ""
+  },
+  "author": "tyran0",
+  "license": "MIT"
+}
