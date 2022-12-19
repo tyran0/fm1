@@ -1,0 +1,25 @@
+@use '../constants' as *;
+
+.copy {
+    &_caption {
+        letter-spacing: 0.25em;
+    }
+
+    &_title { 
+        font: $displayFont;
+        max-width: 7em;
+        color: $neutralDarkBlue;
+    }
+
+    &_paragraph {
+        max-width: 16em;
+    }
+}
+
+.copy_header > * + * {
+    margin-top: 1.25rem;
+}
+
+.copy > * + * {
+    margin-top: 2rem;
+}

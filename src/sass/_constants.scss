@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
+
+// Primary Colors
+$primaryCyan: hsl(158, 36%, 37%);
+$primaryCream: hsl(30, 38%, 92%);
+
+// Neutral Colors
+$neutralDarkBlue: hsl(212, 21%, 14%);
+$neutralDarkGrayBlue: hsl(228, 12%, 48%);
+$neutralWhite: hsl(0, 0%, 100%);
+
+// Font Styles
+$defaultFontMedium: 500 0.875rem / 1.5 'Montserrat';
+$defaultFontSemiBold: 600 0.875rem / 1.2 'Montserrat';
+$displayFont: 700 2.25rem / 1 'Fraunces';

@@ -1,0 +1,40 @@
+@use 'constants' as *;
+@use 'partials';
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+html {
+    font: $defaultFontMedium;
+    background-color: $primaryCream;
+    color: $neutralDarkGrayBlue;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.main {
+    display: grid;
+    padding: 0 1rem;
+    margin: 0 auto;
+    height: inherit;
+    max-width: max-content;
+}
+
+@media screen and (min-width: 672px) {
+    .preview { grid-template-columns: repeat(2, 320px); } 
+}
+
+@media screen and (max-width: 672px) {
+    .preview_content { padding: 1.5rem; }
+    .copy > * + * { margin-top: 1.5rem; }
+    .copy_header > * + * { margin-top: 0.75rem; }
+    .copy_title { max-width: 9em; }
+    .copy_paragraph { max-width: 21em; }
+}

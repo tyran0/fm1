@@ -3,8 +3,16 @@
   "version": "1.0.0",
   "description": "Frontend Mentor product card component coding challenge",
   "scripts": {
-    "build": ""
+    "sass:build": "sass --no-source-map -s compressed src/sass:dist/css",
+    "sass:watch": "sass --no-source-map -w src/sass:dist/css",
+    "serve": "http-server ./dist -a localhost",
+    "dev": "npm run serve -- -p 5500 -c-1",
+    "start": "npm run sass:build && npm run serve"
   },
   "author": "tyran0",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "sass": "^1.57.0"
+  }
 }

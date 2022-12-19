@@ -1,0 +1,35 @@
+@use '../constants' as *;
+
+.preview {
+    display: grid;
+    background-color: $neutralWhite;
+    border-radius: 1rem;
+    overflow: hidden;
+    align-self: center;
+}
+
+.preview_image {
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.preview_content {
+    padding: 2.5rem;
+    display: grid;
+}
+
+.preview_price {
+    font: $displayFont;
+    display: flex;
+    color: $primaryCyan;
+
+    &-old {
+        font: $defaultFontMedium;
+        color: $neutralDarkGrayBlue;
+        text-decoration: line-through;
+        align-self: center;
+        margin-left: 1.5em;
+    }
+}
