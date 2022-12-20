@@ -21,13 +21,16 @@
 }
 
 .preview_price {
-    font: $displayFont;
+    font: $defaultFontMedium;
+    color: $neutralDarkGrayBlue;
     display: flex;
-    color: $primaryCyan;
 
-    &-old {
-        font: $defaultFontMedium;
-        color: $neutralDarkGrayBlue;
+    .price_discount {
+        font: $displayFont;
+        color: $primaryCyan;
+    }
+
+    .price_original {
         text-decoration: line-through;
         align-self: center;
         margin-left: 1.5em;

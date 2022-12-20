@@ -27,6 +27,11 @@ body {
     max-width: max-content;
 }
 
+.image {
+    width: 100%;
+    height: 100%;
+}
+
 @media screen and (min-width: 672px) {
     .preview { grid-template-columns: repeat(2, 320px); } 
 }

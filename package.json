@@ -5,9 +5,10 @@
   "scripts": {
     "sass:build": "sass --no-source-map -s compressed src/sass:dist/css",
     "sass:watch": "sass --no-source-map -w src/sass:dist/css",
+    "preserve": "npm run sass:build",
     "serve": "http-server ./dist -a localhost",
     "dev": "npm run serve -- -p 5500 -c-1",
-    "start": "npm run sass:build && npm run serve"
+    "start": "npm run serve"
   },
   "author": "tyran0",
   "license": "MIT",

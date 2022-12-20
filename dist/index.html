@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
-    <script type="text/javascript" src="./js/main.js" defer></script>
     <title>Frontend Mentor | Product preview card component</title>
 </head>
 <body>
@@ -13,9 +12,13 @@
 <!-- Coded by tyran0. https://github.com/tyran0 -->
     <main class="main">
         <section class="preview">
-            <img class="image preview_image" width="100%" height="auto"
-                data-src="./assets/image-product.jpg"
-                alt="Picture of CHANEL Gabrielle Essence Eau De Parfum">
+            <picture>
+                <source media="(max-width: 672px)"
+                        srcset="./assets/image-product-mobile.jpg">
+                <img class="image preview_image"
+                     src="./assets/image-product-desktop.jpg"
+                     alt="Picture of CHANEL Gabrielle Essence Eau De Parfum"> 
+            </picture>
             <div class="copy preview_content">
                 <header class="copy_header">
                     <p class="copy_caption">PERFUME</p>
@@ -27,10 +30,10 @@
                         Perfumer-Creator for the House of CHANEL.                 
                     </p>
                 </div>
-                <p class="preview_price">
-                    $149.99
-                    <span class="preview_price-old">$169.99</span> 
-                </p>
+                <div class="preview_price">
+                    <span class="price_discount">$149.99</span>
+                    <span class="price_original">$169.99</span> 
+                </div>
                 <button class="button button-primary">
                     <img src="./assets/icon-cart.svg">
                     Add to Cart

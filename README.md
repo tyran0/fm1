@@ -44,21 +44,43 @@ Users should be able to:
 
 ### What I learned
 
-WIP
+First thing is I learned how to set up custom npm scripts.
+And with a help of 'http-server' was able to serve this
+project locally. For explanation check out links under
+'Useful resoures'.
 
 ``` json
-  "scripts": {
+"scripts": {
     "sass:build": "sass --no-source-map -s compressed src/sass:dist/css",
     "sass:watch": "sass --no-source-map -w src/sass:dist/css",
+    "preserve": "npm run sass:build",
     "serve": "http-server ./dist -a localhost",
     "dev": "npm run serve -- -p 5500 -c-1",
-    "start": "npm run sass:build && npm run serve"
-  }
+    "start": "npm run serve"
+}
+```
+
+Previously I finished this project with the help of some
+JavasScript, and I used that to to make images responsive
+(i.e. so different pictures would load based on display
+width). But now i figured out how to do this without any JS,
+and decided to update my code.
+
+``` html
+<picture>
+    <source media="(max-width: 672px)"
+            srcset="./assets/image-product-mobile.jpg">
+    <img class="image preview_image"
+         src="./assets/image-product-desktop.jpg"
+         alt="Picture of CHANEL Gabrielle Essence Eau De Parfum"> 
+</picture>
 ```
 
 ### Useful resources
 
-WIP
+- [http-server](https://github.com/http-party/http-server) -> is a utility for serving static pages, would definitely use for future challenges.
+- [How npm handles the "scripts" field](https://docs.npmjs.com/cli/v9/using-npm/scripts) -> help me found out that you can use pre scripts not only with build-in npm scripts, but also with custom ones.
+- [The HTML picture element explained](https://www.youtube.com/watch?v=Rik3gHT24AM) -> I really like tutorials from Kevin Powell; again helped me out massively, 100% recommended.
 
 ## Author
 
