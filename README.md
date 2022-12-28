@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution [](https://www.frontendmentor.io/solutions/product-preview-card-component-rkb6Ic4Z1G)
+- Solution URL: [https://www.frontendmentor.io/solutions/product-preview-card-component-rkb6Ic4Z1G](https://www.frontendmentor.io/solutions/product-preview-card-component-rkb6Ic4Z1G)
 <!-- - [Vercel Deployment](https://product-preview-card-component-tyran0.vercel.app/) -->
 
 ## My process
